@@ -1,0 +1,1169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Ответ к заявке</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="СохранитьИЗакрыть" id="6">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗакрытьФорму</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.SaveFile</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сохранить и закрыть</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="СохранитьИЗакрытьExtendedTooltip" id="8"/>
+			</Button>
+			<Button name="Отмена" id="7">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отмена</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ОтменаExtendedTooltip" id="9"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="КоманднаяПанельHTML" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель HTML</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель HTML</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КоманднаяПанельHTMLРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<CommandBar name="КоманднаяПанельКнопок" id="12">
+					<EnableContentChange>true</EnableContentChange>
+					<VerticalStretch>false</VerticalStretch>
+					<ExtendedTooltip name="КоманднаяПанельКнопокExtendedTooltip" id="13"/>
+					<ChildItems>
+						<ButtonGroup name="ГруппаУправлениеРежимом" id="14">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа управление режимом</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа управление режимом</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаУправлениеРежимомExtendedTooltip" id="15"/>
+							<ChildItems>
+								<Button name="ОбновитьHTML" id="16">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ПеречитатьHTMLИзDOM</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обновить</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОбновитьHTMLРасширеннаяПодсказка" id="17"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаКопиПасте" id="18">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа копи пасте</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГруппаКопиПастеExtendedTooltip" id="19"/>
+							<ChildItems>
+								<Button name="КомандаCut" id="20">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаCut</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.Вырезать</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаCutExtendedTooltip" id="21"/>
+								</Button>
+								<Button name="КомандаCopy" id="22">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаCopy</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаCopyExtendedTooltip" id="23"/>
+								</Button>
+								<Button name="КомандаPaste" id="24">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаPaste</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ВставитьИзБуфера</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаPasteExtendedTooltip" id="25"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаСсылки" id="26">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ссылки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ссылки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаСсылкиExtendedTooltip" id="27"/>
+							<ChildItems>
+								<Popup name="ГруппаВыбораКартинки" id="93">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа выбора картинки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Picture>
+										<xr:Ref>CommonPicture.ВставитьКартинку</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ГруппаВыбораКартинкиРасширеннаяПодсказка" id="94"/>
+									<ChildItems>
+										<Button name="ВставитьКартинкуИзФайла" id="95">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьКартинкуИзФайла</CommandName>
+											<ExtendedTooltip name="ВставитьКартинкуИзФайлаРасширеннаяПодсказка" id="96"/>
+										</Button>
+										<Button name="ВставитьКартинкуИзБуфера" id="97">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВставитьКартинкуИзБуфера</CommandName>
+											<ExtendedTooltip name="ВставитьКартинкуИзБуфераРасширеннаяПодсказка" id="98"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+								<Button name="Гиперссылка" id="30">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ВставитьГиперссылку</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.Ссылка</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ГиперссылкаExtendedTooltip" id="31"/>
+								</Button>
+								<Button name="КомандаInsertHorizontalRule" id="32">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаInsertHorizontalRule</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ГоризонтальнаяЛиния</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаInsertHorizontalRuleExtendedTooltip" id="33"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаВерхНиз" id="34">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа верх низ</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа верх низ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаВерхНизExtendedTooltip" id="35"/>
+							<ChildItems>
+								<Button name="Командаsuperscript" id="36">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.Командаsuperscript</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.Надстрочный</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаsuperscriptExtendedTooltip" id="37"/>
+								</Button>
+								<Button name="Командаsubscript" id="38">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.Командаsubscript</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.Подстрочный</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаsubscriptExtendedTooltip" id="39"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаНачертание" id="40">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа начертание</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа начертание</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаНачертаниеExtendedTooltip" id="41"/>
+							<ChildItems>
+								<Button name="КомандаBold" id="42">
+									<Type>CommandBarButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.КомандаBold</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.Полужирный</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Полужирный</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КомандаBoldExtendedTooltip" id="43"/>
+								</Button>
+								<Button name="КомандаItalic" id="44">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаItalic</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.Курсив</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Курсив</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КомандаItalicExtendedTooltip" id="45"/>
+								</Button>
+								<Button name="КомандаUnderline" id="46">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаUnderline</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.Подчеркнутый</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подчеркнутый</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КомандаUnderlineExtendedTooltip" id="47"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаВыравнивание" id="48">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа выравнивание</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа выравнивание</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаВыравниваниеExtendedTooltip" id="49"/>
+							<ChildItems>
+								<Button name="КомандаJustifyLeft" id="50">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаJustifyLeft</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ВыравниваниеПоЛевомуКраю</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаJustifyLeftExtendedTooltip" id="51"/>
+								</Button>
+								<Button name="КомандаJustifyCenter" id="52">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаJustifyCenter</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ВыравниваниеПоЦентру</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаJustifyCenterExtendedTooltip" id="53"/>
+								</Button>
+								<Button name="КомандаJustifyRight" id="54">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаJustifyRight</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ВыравниваниеПоПравомуКраю</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаJustifyRightExtendedTooltip" id="55"/>
+								</Button>
+								<Button name="КомандаJustifyFull" id="56">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаJustifyFull</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ВыравниваниеПоШирине</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаJustifyFullExtendedTooltip" id="57"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаСписки" id="58">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа списки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа списки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаСпискиExtendedTooltip" id="59"/>
+							<ChildItems>
+								<Button name="КомандаInsertOrderedList" id="60">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаInsertOrderedList</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.НумерованныйСписок</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаInsertOrderedListExtendedTooltip" id="61"/>
+								</Button>
+								<Button name="КомандаInsertUnorderedList" id="62">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаInsertUnorderedList</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.МаркированныйСписок</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаInsertUnorderedListExtendedTooltip" id="63"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаОтступы" id="64">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отступы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отступы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаОтступыExtendedTooltip" id="65"/>
+							<ChildItems>
+								<Button name="КомандаOutdent" id="66">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаOutdent</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.УменьшитьОтступ</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаOutdentExtendedTooltip" id="67"/>
+								</Button>
+								<Button name="КомандаIndent" id="68">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаIndent</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.УвеличитьОтступ</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КомандаIndentExtendedTooltip" id="69"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаЦвета" id="70">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа цвета</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа цвета</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаЦветаExtendedTooltip" id="71"/>
+							<ChildItems>
+								<Button name="КомандаForeColor" id="72">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаForeColor</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ЦветШрифта</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Цвет шрифта</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КомандаForeColorExtendedTooltip" id="73"/>
+								</Button>
+								<Button name="КомандаBackColor" id="74">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КомандаBackColor</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ВыделениеЦветом</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выделение цветом</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КомандаBackColorExtendedTooltip" id="75"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+					</ChildItems>
+				</CommandBar>
+				<UsualGroup name="ГруппаВыпадающихСписков" id="76">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выпадающих списков</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выпадающих списков</v8:content>
+						</v8:item>
+					</ToolTip>
+					<VerticalStretch>false</VerticalStretch>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВыпадающихСписковExtendedTooltip" id="77"/>
+					<ChildItems>
+						<InputField name="КомандаFormatBlock" id="78">
+							<DataPath>СтилиТекста</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Стиль</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Wrap>false</Wrap>
+							<PasswordMode>false</PasswordMode>
+							<ExtendedEdit>false</ExtendedEdit>
+							<ChoiceButton>true</ChoiceButton>
+							<ClearButton>false</ClearButton>
+							<SpinButton>false</SpinButton>
+							<OpenButton>false</OpenButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChooseType>false</ChooseType>
+							<TextEdit>false</TextEdit>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="КомандаFormatBlockКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="КомандаFormatBlockExtendedTooltip" id="80"/>
+							<Events>
+								<Event name="ChoiceProcessing">ВыполнитьКомандуСписка</Event>
+							</Events>
+						</InputField>
+						<InputField name="КомандаFontName" id="81">
+							<DataPath>ИмяШрифта</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шрифт</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ListChoiceMode>true</ListChoiceMode>
+							<TextEdit>false</TextEdit>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="КомандаFontNameКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="КомандаFontNameExtendedTooltip" id="83"/>
+							<Events>
+								<Event name="ChoiceProcessing">ВыполнитьКомандуСписка</Event>
+							</Events>
+						</InputField>
+						<InputField name="КомандаFontSize" id="84">
+							<DataPath>РазмерыШрифта</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Размер</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<Width>5</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<DropListButton>true</DropListButton>
+							<ChoiceButton>false</ChoiceButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChooseType>false</ChooseType>
+							<TextEdit>false</TextEdit>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="КомандаFontSizeКонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="КомандаFontSizeExtendedTooltip" id="86"/>
+							<Events>
+								<Event name="ChoiceProcessing">ВыполнитьКомандуСписка</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<HTMLDocumentField name="ПолеHTMLДокумента" id="87">
+			<DataPath>ТекстДополненияHTML</DataPath>
+			<DefaultItem>true</DefaultItem>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ПолеHTMLДокументаКонтекстноеМеню" id="88"/>
+			<ExtendedTooltip name="ПолеHTMLДокументаРасширеннаяПодсказка" id="89"/>
+			<Events>
+				<Event name="OnChange">ПолеHTMLДокументаПриИзменении</Event>
+				<Event name="DocumentComplete">ПолеHTMLДокументаДокументСформирован</Event>
+				<Event name="OnClick">ПолеHTMLДокументаПриНажатии</Event>
+			</Events>
+		</HTMLDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаВложений" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица вложений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ключ" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Адрес" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяЛокальногоФайла" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя локального файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТекстДополненияHTML" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст дополнения HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РазмерыШрифта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размеры шрифта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтилиТекста" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стили текста</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяШрифта" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя шрифта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресВходящихДанных" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес входящих данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдФормыРодителя" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ид формы родителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СсылкаНаОбъект" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗакрытьФорму" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть форму</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть форму</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрытьФорму</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьГиперссылку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить гиперссылку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить гиперссылку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьГиперссылку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКартинкуИзФайла" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Из файла на диске</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить картинку из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВставитьКартинку</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ВставитьКартинкуИзФайла</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаBackColor" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выделение цветом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выделение цветом</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыборЦвета</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаBold" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полужирный</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полужирный</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаCopy" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+C</Shortcut>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаCut" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вырезать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вырезать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+X</Shortcut>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаFontName" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда font name</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыполнитьКомандуСписка</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаFontSize" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда font size</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыполнитьКомандуСписка</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаForeColor" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет шрифта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет шрифта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыборЦвета</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаFormatBlock" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда format block</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыполнитьКомандуСписка</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаIndent" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Увеличить отступ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Увеличить отступ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаInsertHorizontalRule" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда insert horizontal rule</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Горизонтальная линия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаInsertOrderedList" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нумерованный список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нумерованный список</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаInsertUnorderedList" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маркированный список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маркированный список</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаItalic" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Курсив</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Курсив</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаJustifyCenter" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По центру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выравнивание по центру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаJustifyFull" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По ширине</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выравнивание по ширине</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаJustifyLeft" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По левому краю</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выравнивание по левому краю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаJustifyRight" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По правому краю</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выравнивание по правому краю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаOutdent" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уменьшить отступ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уменьшить отступ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаPaste" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+V</Shortcut>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Командаsubscript" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нижний индекс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нижний индекс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Командаsuperscript" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Верхний индекс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Верхний индекс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаUnderline" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подчеркнутый</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подчеркнутый</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКоманду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПеречитатьHTMLИзDOM" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечитать HTML из DOM</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечитать HTMLИз DOM</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПеречитатьHTML</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКартинкуИзБуфера" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Из буфера обмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить картинку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВставитьКартинку</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ВставитьКартинкуИзБуфера</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

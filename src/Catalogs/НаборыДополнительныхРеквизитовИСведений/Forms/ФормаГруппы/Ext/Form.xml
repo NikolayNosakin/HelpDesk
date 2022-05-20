@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+	</CommandSet>
+	<UseForFoldersAndItems>Folders</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Wrap>false</Wrap>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="25"/>
+		</InputField>
+		<UsualGroup name="ТаблицыСвойств" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблицы свойств</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблицы свойств</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ТаблицыСвойствРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<Table name="ДополнительныеРеквизиты" id="10">
+					<TitleLocation>Top</TitleLocation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.ДополнительныеРеквизиты</DataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДополнительныеРеквизитыКонтекстноеМеню" id="11"/>
+					<AutoCommandBar name="ДополнительныеРеквизитыКоманднаяПанель" id="12"/>
+					<ExtendedTooltip name="ДополнительныеРеквизитыРасширеннаяПодсказка" id="27"/>
+					<SearchStringAddition name="ДополнительныеРеквизитыСтрокаПоиска" id="28">
+						<AdditionSource>
+							<Item>ДополнительныеРеквизиты</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеРеквизитыСтрокаПоискаКонтекстноеМеню" id="29"/>
+						<ExtendedTooltip name="ДополнительныеРеквизитыСтрокаПоискаРасширеннаяПодсказка" id="30"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДополнительныеРеквизитыСостояниеПросмотра" id="31">
+						<AdditionSource>
+							<Item>ДополнительныеРеквизиты</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеРеквизитыСостояниеПросмотраКонтекстноеМеню" id="32"/>
+						<ExtendedTooltip name="ДополнительныеРеквизитыСостояниеПросмотраРасширеннаяПодсказка" id="33"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДополнительныеРеквизитыУправлениеПоиском" id="34">
+						<AdditionSource>
+							<Item>ДополнительныеРеквизиты</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеРеквизитыУправлениеПоискомКонтекстноеМеню" id="35"/>
+						<ExtendedTooltip name="ДополнительныеРеквизитыУправлениеПоискомРасширеннаяПодсказка" id="36"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="НомерСтроки" id="13">
+							<DataPath>Объект.ДополнительныеРеквизиты.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НомерСтрокиКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="НомерСтрокиРасширеннаяПодсказка" id="37"/>
+						</LabelField>
+						<InputField name="Свойство" id="15">
+							<DataPath>Объект.ДополнительныеРеквизиты.Свойство</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СвойствоКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="СвойствоРасширеннаяПодсказка" id="38"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="ДополнительныеСведения" id="17">
+					<TitleLocation>Top</TitleLocation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.ДополнительныеСведения</DataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДополнительныеСведенияКонтекстноеМеню" id="18"/>
+					<AutoCommandBar name="ДополнительныеСведенияКоманднаяПанель" id="19"/>
+					<ExtendedTooltip name="ДополнительныеСведенияРасширеннаяПодсказка" id="39"/>
+					<SearchStringAddition name="ДополнительныеСведенияСтрокаПоиска" id="40">
+						<AdditionSource>
+							<Item>ДополнительныеСведения</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеСведенияСтрокаПоискаКонтекстноеМеню" id="41"/>
+						<ExtendedTooltip name="ДополнительныеСведенияСтрокаПоискаРасширеннаяПодсказка" id="42"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДополнительныеСведенияСостояниеПросмотра" id="43">
+						<AdditionSource>
+							<Item>ДополнительныеСведения</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеСведенияСостояниеПросмотраКонтекстноеМеню" id="44"/>
+						<ExtendedTooltip name="ДополнительныеСведенияСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДополнительныеСведенияУправлениеПоиском" id="46">
+						<AdditionSource>
+							<Item>ДополнительныеСведения</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеСведенияУправлениеПоискомКонтекстноеМеню" id="47"/>
+						<ExtendedTooltip name="ДополнительныеСведенияУправлениеПоискомРасширеннаяПодсказка" id="48"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="НомерСтроки1" id="20">
+							<DataPath>Объект.ДополнительныеСведения.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НомерСтроки1КонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="НомерСтроки1РасширеннаяПодсказка" id="49"/>
+						</LabelField>
+						<InputField name="Свойство1" id="22">
+							<DataPath>Объект.ДополнительныеСведения.Свойство</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Свойство1КонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="Свойство1РасширеннаяПодсказка" id="50"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.НаборыДополнительныхРеквизитовИСведений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<SettingsStorage>SettingsStorage.ХранилищеНастроек</SettingsStorage>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<Table name="СписокМоихЗаявок" id="11">
+			<Representation>List</Representation>
+			<SkipOnInput>false</SkipOnInput>
+			<ChoiceMode>true</ChoiceMode>
+			<RowSelectionMode>Row</RowSelectionMode>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<AutoMarkIncomplete>false</AutoMarkIncomplete>
+			<InitialTreeView>ExpandAllLevels</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>СписокЗаявокПоИсполнителю</DataPath>
+			<RowPictureDataPath>СписокЗаявокПоИсполнителю.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>true</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>false</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>false</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокМоихЗаявокКонтекстноеМеню" id="12"/>
+			<AutoCommandBar name="СписокМоихЗаявокКоманднаяПанель" id="13">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="СписокМоихЗаявокКнопкаВыбрать" id="433">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Item.СписокМоихЗаявок.StandardCommand.Choose</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СписокМоихЗаявокКнопкаВыбратьРасширеннаяПодсказка" id="434"/>
+					</Button>
+					<Button name="Создать" id="41">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Item.СписокМоихЗаявок.StandardCommand.Create</CommandName>
+						<ExtendedTooltip name="СоздатьExtendedTooltip" id="96"/>
+					</Button>
+					<Button name="Изменить" id="42">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Item.СписокМоихЗаявок.StandardCommand.Change</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ИзменитьExtendedTooltip" id="97"/>
+					</Button>
+					<Button name="Найти" id="43">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Item.СписокМоихЗаявок.StandardCommand.Find</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="НайтиExtendedTooltip" id="98"/>
+					</Button>
+					<Button name="ОтменитьПоиск" id="44">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Item.СписокМоихЗаявок.StandardCommand.CancelSearch</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ОтменитьПоискExtendedTooltip" id="99"/>
+					</Button>
+					<Button name="УстановитьИнтервалДат" id="45">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Item.СписокМоихЗаявок.StandardCommand.SetDateInterval</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="УстановитьИнтервалДатExtendedTooltip" id="100"/>
+					</Button>
+					<Button name="ПометитьНаУдаление" id="46">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Representation>PictureAndText</Representation>
+						<Enabled>false</Enabled>
+						<CommandName>Form.Command.ПометитьНаУдаление</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.MarkToDelete</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ПометитьНаУдалениеExtendedTooltip" id="101"/>
+					</Button>
+					<Button name="Обновить" id="47">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Item.СписокМоихЗаявок.StandardCommand.Refresh</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ОбновитьExtendedTooltip" id="102"/>
+					</Button>
+					<Button name="СтруктураПодчиненности" id="49">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>CommonCommand.СтруктураПодчиненности</CommandName>
+						<DataPath>Items.СписокМоихЗаявок.CurrentData.Ref</DataPath>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СтруктураПодчиненностиExtendedTooltip" id="104"/>
+					</Button>
+					<Button name="НастройкаОформления" id="51">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.СписокМоихЗаявок.StandardCommand.ListSettings</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Настроить оформление</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="НастройкаОформленияРасширеннаяПодсказка" id="106"/>
+					</Button>
+					<Button name="ВывестиСписок" id="52">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Item.СписокМоихЗаявок.StandardCommand.OutputList</CommandName>
+						<ExtendedTooltip name="ВывестиСписокExtendedTooltip" id="107"/>
+					</Button>
+					<Button name="ПрисоединенныеФайлы" id="53">
+						<Type>CommandBarButton</Type>
+						<CommandName>CommonCommand.ПрисоединенныеФайлы</CommandName>
+						<DataPath>Items.СписокМоихЗаявок.CurrentData.Ref</DataPath>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ПрисоединенныеФайлыExtendedTooltip" id="108"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокМоихЗаявокРасширеннаяПодсказка" id="111"/>
+			<SearchStringAddition name="СписокМоихЗаявокSearchString" id="424">
+				<AdditionSource>
+					<Item>СписокМоихЗаявок</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокМоихЗаявокSearchStringContextMenu" id="425"/>
+				<ExtendedTooltip name="СписокМоихЗаявокSearchStringExtendedTooltip" id="426"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокМоихЗаявокViewStatus" id="427">
+				<AdditionSource>
+					<Item>СписокМоихЗаявок</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокМоихЗаявокViewStatusContextMenu" id="428"/>
+				<ExtendedTooltip name="СписокМоихЗаявокViewStatusExtendedTooltip" id="429"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокМоихЗаявокSearchControl" id="430">
+				<AdditionSource>
+					<Item>СписокМоихЗаявок</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокМоихЗаявокSearchControlContextMenu" id="431"/>
+				<ExtendedTooltip name="СписокМоихЗаявокSearchControlExtendedTooltip" id="432"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокМоихЗаявокВыбор</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="ГруппаКартинокМоиЗаявки" id="85">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа картинок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа картинок мои заявки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ExtendedTooltip name="ГруппаКартинокМоиЗаявкиРасширеннаяПодсказка" id="112"/>
+					<ChildItems>
+						<PictureField name="СписокМоихЗаявокСрочная" id="59">
+							<DataPath>СписокЗаявокПоИсполнителю.Срочная</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Срочная задача</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+							<ShowInFooter>false</ShowInFooter>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.ВосклицательныйЗнак</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="СписокМоихЗаявокСрочнаяКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="СписокМоихЗаявокСрочнаяРасширеннаяПодсказка" id="113"/>
+						</PictureField>
+						<PictureField name="СписокМоихЗаявокЕстьФайлы" id="61">
+							<DataPath>СписокЗаявокПоИсполнителю.ЕстьФайлы</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Есть прикрепленные файлы</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Есть прикрепленные файлы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+							<ShowInFooter>false</ShowInFooter>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.Файл</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="СписокМоихЗаявокЕстьФайлыКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="СписокМоихЗаявокЕстьФайлыРасширеннаяПодсказка" id="114"/>
+						</PictureField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="СписокМоихЗаявокНомер" id="63">
+					<DataPath>СписокЗаявокПоИсполнителю.Number</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<ShowInFooter>false</ShowInFooter>
+					<Width>1</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧГ=0;</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="СписокМоихЗаявокНомерКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="СписокМоихЗаявокНомерРасширеннаяПодсказка" id="115"/>
+				</LabelField>
+				<ColumnGroup name="СписокМоихЗаявокГруппаДаты" id="86">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа даты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список моих заявок группа даты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СписокМоихЗаявокГруппаДатыРасширеннаяПодсказка" id="116"/>
+					<ChildItems>
+						<LabelField name="СписокМоихЗаявокДата" id="66">
+							<DataPath>СписокЗаявокПоИсполнителю.Date</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Открыта</v8:content>
+								</v8:item>
+							</Title>
+							<ShowInFooter>false</ShowInFooter>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ="дд.ММ.гггг ЧЧ:мм"</v8:content>
+								</v8:item>
+							</Format>
+							<ContextMenu name="СписокМоихЗаявокДатаКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="СписокМоихЗаявокДатаРасширеннаяПодсказка" id="117"/>
+						</LabelField>
+						<LabelField name="СписокМоихЗаявокДатаИзменения" id="68">
+							<DataPath>СписокЗаявокПоИсполнителю.ДатаИзменения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Изменена</v8:content>
+								</v8:item>
+							</Title>
+							<ShowInFooter>false</ShowInFooter>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ="дд.ММ.гггг ЧЧ:мм"</v8:content>
+								</v8:item>
+							</Format>
+							<ContextMenu name="СписокМоихЗаявокДатаИзмененияКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="СписокМоихЗаявокДатаИзмененияРасширеннаяПодсказка" id="118"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="СписокМоихЗаявокТипЗаявки" id="72">
+					<DataPath>СписокЗаявокПоИсполнителю.ТипЗаявки</DataPath>
+					<Visible>false</Visible>
+					<ShowInFooter>false</ShowInFooter>
+					<ContextMenu name="СписокМоихЗаявокТипЗаявкиКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="СписокМоихЗаявокТипЗаявкиРасширеннаяПодсказка" id="120"/>
+				</LabelField>
+				<LabelField name="СписокМоихЗаявокСписокЗаявокТема" id="132">
+					<DataPath>СписокЗаявокПоИсполнителю.Тема</DataPath>
+					<ShowInFooter>false</ShowInFooter>
+					<Width>20</Width>
+					<ContextMenu name="СписокМоихЗаявокСписокЗаявокТемаКонтекстноеМеню" id="133"/>
+					<ExtendedTooltip name="СписокМоихЗаявокСписокЗаявокТемаРасширеннаяПодсказка" id="134"/>
+				</LabelField>
+				<LabelField name="СписокМоихЗаявокОписаниеЗаявки" id="74">
+					<DataPath>СписокЗаявокПоИсполнителю.ОписаниеЗаявки</DataPath>
+					<ShowInFooter>false</ShowInFooter>
+					<Width>50</Width>
+					<VerticalStretch>true</VerticalStretch>
+					<ContextMenu name="СписокМоихЗаявокОписаниеЗаявкиКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="СписокМоихЗаявокОписаниеЗаявкиРасширеннаяПодсказка" id="121"/>
+				</LabelField>
+				<LabelField name="СписокМоихЗаявокКонтрагент" id="360">
+					<DataPath>СписокЗаявокПоИсполнителю.Контрагент</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказчик</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокМоихЗаявокКонтрагентКонтекстноеМеню" id="361"/>
+					<ExtendedTooltip name="СписокМоихЗаявокКонтрагентРасширеннаяПодсказка" id="362"/>
+				</LabelField>
+				<ColumnGroup name="СписокМоихЗаявокГруппаОтветственных" id="140">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ответственных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список моих заявок группа ответственных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СписокМоихЗаявокГруппаОтветственныхРасширеннаяПодсказка" id="141"/>
+					<ChildItems>
+						<LabelField name="СписокМоихЗаявокТекущийИсполнитель" id="415">
+							<DataPath>СписокЗаявокПоИсполнителю.ТекущийИсполнитель</DataPath>
+							<Width>20</Width>
+							<ContextMenu name="СписокМоихЗаявокТекущийИсполнительКонтекстноеМеню" id="416"/>
+							<ExtendedTooltip name="СписокМоихЗаявокТекущийИсполнительРасширеннаяПодсказка" id="417"/>
+						</LabelField>
+						<LabelField name="СписокМоихЗаявокПостановщик" id="81">
+							<DataPath>СписокЗаявокПоИсполнителю.Постановщик</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Постановщик</v8:content>
+								</v8:item>
+							</Title>
+							<ShowInFooter>false</ShowInFooter>
+							<ContextMenu name="СписокМоихЗаявокПостановщикКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="СписокМоихЗаявокПостановщикРасширеннаяПодсказка" id="126"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="СписокМоихЗаявокГруппаСрочности" id="87">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа срочности</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список моих заявок группа срочности</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СписокМоихЗаявокГруппаСрочностиРасширеннаяПодсказка" id="122"/>
+					<ChildItems>
+						<LabelField name="СписокМоихЗаявокСтатус" id="77">
+							<DataPath>СписокЗаявокПоИсполнителю.Статус</DataPath>
+							<ShowInFooter>false</ShowInFooter>
+							<ContextMenu name="СписокМоихЗаявокСтатусКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="СписокМоихЗаявокСтатусРасширеннаяПодсказка" id="123"/>
+						</LabelField>
+						<InputField name="СписокМоихЗаявокСрокЗаявки" id="79">
+							<DataPath>СписокЗаявокПоИсполнителю.СрокЗаявки</DataPath>
+							<Visible>false</Visible>
+							<ShowInFooter>false</ShowInFooter>
+							<ContextMenu name="СписокМоихЗаявокСрокЗаявкиКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="СписокМоихЗаявокСрокЗаявкиРасширеннаяПодсказка" id="124"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="СписокМоихЗаявокДатаЗакрытия" id="83">
+					<DataPath>СписокЗаявокПоИсполнителю.ДатаЗакрытия</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закрыта</v8:content>
+						</v8:item>
+					</Title>
+					<ShowInFooter>false</ShowInFooter>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ="дд.ММ.гггг ЧЧ:мм"</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="СписокМоихЗаявокДатаЗакрытияКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="СписокМоихЗаявокДатаЗакрытияРасширеннаяПодсказка" id="125"/>
+				</LabelField>
+				<LabelField name="СписокМоихЗаявокОрганизация" id="70">
+					<DataPath>СписокЗаявокПоИсполнителю.Организация</DataPath>
+					<ShowInFooter>false</ShowInFooter>
+					<ContextMenu name="СписокМоихЗаявокОрганизацияКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="СписокМоихЗаявокОрганизацияРасширеннаяПодсказка" id="119"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="СписокМоихЗаявокГруппаОписания" id="130">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание заявки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список моих заявок группа описания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<CollapsedRepresentationTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать описание заявки</v8:content>
+				</v8:item>
+			</CollapsedRepresentationTitle>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ShowLeftMargin>false</ShowLeftMargin>
+			<ExtendedTooltip name="СписокМоихЗаявокГруппаОписанияРасширеннаяПодсказка" id="131"/>
+			<ChildItems>
+				<InputField name="СписокМоихЗаявокОписаниеЗаяки" id="56">
+					<DataPath>Items.СписокМоихЗаявок.CurrentData.ОписаниеЗаявки</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="СписокМоихЗаявокОписаниеЗаякиКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="СписокМоихЗаявокОписаниеЗаякиРасширеннаяПодсказка" id="127"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокЗаявокПоИсполнителю" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявки исполнителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДокументЗаявка.Ссылка,
+	ДокументЗаявка.ПометкаУдаления,
+	ДокументЗаявка.Номер,
+	ДокументЗаявка.Дата,
+	ДокументЗаявка.Проведен,
+	ДокументЗаявка.Постановщик,
+	ДокументЗаявка.ОписаниеЗаявки,
+	ДокументЗаявка.ТекущийИсполнитель,
+	ДокументЗаявка.Статус,
+	ДокументЗаявка.МоментВремени,
+	ДокументЗаявка.ДатаИзменения,
+	ДокументЗаявка.Организация,
+	ДокументЗаявка.СрокЗаявки,
+	ДокументЗаявка.ТипЗаявки,
+	ДокументЗаявка.Контрагент,
+	ДокументЗаявка.ЗаявкаЗакрыта,
+	ДокументЗаявка.Тема,
+	ДокументЗаявка.ДатаЗакрытия,
+	ВЫБОР
+		КОГДА ДокументЗаявка.Приоритет = ЗНАЧЕНИЕ(Перечисление.ПриоритетыЗаявки.Высокий)
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК Срочная,
+	ВложенныйЗапрос.ЕстьФайлы,
+	ДокументЗаявка.Проект,
+	ДокументЗаявка.ПроектнаяЗадача
+ИЗ
+	Документ.Заявка КАК ДокументЗаявка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ДокЗаявка.Ссылка КАК Ссылка,
+			МАКСИМУМ(ВЫБОР
+					КОГДА Файлы.Наименование ЕСТЬ NULL 
+						ТОГДА 1
+					ИНАЧЕ 0
+				КОНЕЦ) КАК ЕстьФайлы
+		ИЗ
+			Документ.Заявка КАК ДокЗаявка
+				ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Файлы КАК Файлы
+				ПО ДокЗаявка.Ссылка = Файлы.ВладелецФайла
+		
+		СГРУППИРОВАТЬ ПО
+			ДокЗаявка.Ссылка) КАК ВложенныйЗапрос
+		ПО ДокументЗаявка.Ссылка = ВложенныйЗапрос.Ссылка
+ГДЕ
+	ДокументЗаявка.ТекущийИсполнитель = &amp;Ответственный</QueryText>
+				<MainTable>Document.Заявка</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ЗаявкаЗакрыта</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.СостоянияЗаявок.Отменена</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаИзменения</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ЗаявкаЗакрыта</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#A8A8A8</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.СостоянияЗаявок.Отменена</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Шрифт</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" strikeout="true" kind="WindowsFont"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Номер</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Номер</dcsset:left>
+									<dcsset:comparisonType>Filled</dcsset:comparisonType>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Шрифт</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" bold="true" kind="WindowsFont"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Срочная</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#FF7878</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ДатаИзменения</dcsset:left>
+									<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="v8:StandardBeginningDate">
+										<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+									</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#0000FF</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИспользоватьУчетПоОрганизациям" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать учет по организациям</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьУчетПоКонтрагентам" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать учет по контрагентам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПометитьНаУдаление" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить заявку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПометитьНаУдаление</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

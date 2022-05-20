@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Период" id="1">
+			<DataPath>Запись.Period</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ИмяОтчета" id="4">
+			<DataPath>Запись.ИмяОтчета</DataPath>
+			<ContextMenu name="ИмяОтчетаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИмяОтчетаРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="StartChoice">ИмяОтчетаНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ИмяВарианта" id="7">
+			<DataPath>Запись.ИмяВарианта</DataPath>
+			<ContextMenu name="ИмяВариантаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИмяВариантаРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="StartChoice">ИмяВариантаНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="Получатель" id="10">
+			<DataPath>Запись.Получатель</DataPath>
+			<ContextMenu name="ПолучательКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПолучательРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<CheckBoxField name="Использовать" id="13">
+			<DataPath>Запись.Использовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ИспользоватьРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<InputField name="Тема" id="16">
+			<DataPath>Запись.Тема</DataPath>
+			<ContextMenu name="ТемаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ТемаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ТекстПисьма" id="19">
+			<DataPath>Запись.ТекстПисьма</DataPath>
+			<ContextMenu name="ТекстПисьмаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ТекстПисьмаРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ФорматОтправки" id="22">
+			<DataPath>Запись.ФорматОтправки</DataPath>
+			<ContextMenu name="ФорматОтправкиКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ФорматОтправкиРасширеннаяПодсказка" id="24"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.НастройкаРассылкиОтчетов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

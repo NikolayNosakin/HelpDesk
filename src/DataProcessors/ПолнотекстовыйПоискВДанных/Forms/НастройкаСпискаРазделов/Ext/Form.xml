@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка списка разделов поиска</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСохранить" id="28">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Сохранить</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьРасширеннаяПодсказка" id="29"/>
+			</Button>
+			<Button name="ФормаОтмена" id="27">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="30"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаРазделыПоиска" id="1">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа разделы поиска</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРазделыПоискаРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<Table name="РазделыПоиска" id="2">
+					<Representation>List</Representation>
+					<HeightInTableRows>12</HeightInTableRows>
+					<Header>false</Header>
+					<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<AutoAddIncomplete>false</AutoAddIncomplete>
+					<AutoMarkIncomplete>false</AutoMarkIncomplete>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.РазделыПоиска</DataPath>
+					<RowPictureDataPath>Объект.РазделыПоиска.Picture</RowPictureDataPath>
+					<CommandSet>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Pickup</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<ContextMenu name="РазделыПоискаКонтекстноеМеню" id="3"/>
+					<AutoCommandBar name="РазделыПоискаКоманднаяПанель" id="4"/>
+					<ExtendedTooltip name="РазделыПоискаРасширеннаяПодсказка" id="32"/>
+					<SearchStringAddition name="РазделыПоискаСтрокаПоиска" id="33">
+						<AdditionSource>
+							<Item>РазделыПоиска</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РазделыПоискаСтрокаПоискаКонтекстноеМеню" id="34"/>
+						<ExtendedTooltip name="РазделыПоискаСтрокаПоискаРасширеннаяПодсказка" id="35"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="РазделыПоискаСостояниеПросмотра" id="36">
+						<AdditionSource>
+							<Item>РазделыПоиска</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РазделыПоискаСостояниеПросмотраКонтекстноеМеню" id="37"/>
+						<ExtendedTooltip name="РазделыПоискаСостояниеПросмотраРасширеннаяПодсказка" id="38"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="РазделыПоискаУправлениеПоиском" id="39">
+						<AdditionSource>
+							<Item>РазделыПоиска</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="РазделыПоискаУправлениеПоискомКонтекстноеМеню" id="40"/>
+						<ExtendedTooltip name="РазделыПоискаУправлениеПоискомРасширеннаяПодсказка" id="41"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">РазделыПоискаВыбор</Event>
+						<Event name="BeforeAddRow">РазделыПоискаПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">РазделыПоискаПередУдалением</Event>
+						<Event name="BeforeRowChange">РазделыПоискаПередНачаломИзменения</Event>
+					</Events>
+					<ChildItems>
+						<CheckBoxField name="НастройкиПоискаРазделыПоискаПометка" id="21">
+							<DataPath>Объект.РазделыПоиска.Check</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НастройкиПоискаРазделыПоискаПометкаКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="НастройкиПоискаРазделыПоискаПометкаРасширеннаяПодсказка" id="42"/>
+						</CheckBoxField>
+						<InputField name="НастройкиПоискаРазделыПоискаЗначение" id="19">
+							<DataPath>Объект.РазделыПоиска.Value</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="НастройкиПоискаРазделыПоискаЗначениеКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="НастройкиПоискаРазделыПоискаЗначениеРасширеннаяПодсказка" id="43"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПолнотекстовыйПоискВДанных</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РазделыПоиска</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.РазделыПоиска.Представление</dcsset:left>
+						<dcsset:comparisonType>InList</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ФайлЗанятыйДругимПользователем</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Сохранить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сохранить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

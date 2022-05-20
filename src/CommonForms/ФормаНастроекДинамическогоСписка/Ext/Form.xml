@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ЗавершитьРедактирование" id="60">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗавершитьРедактирование</CommandName>
+				<ExtendedTooltip name="ЗавершитьРедактированиеРасширеннаяПодсказка" id="61"/>
+			</Button>
+			<Button name="Отмена" id="58">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.CancelEdit</CommandName>
+				<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="59"/>
+			</Button>
+			<Popup name="ФормаГруппаЕще" id="54">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Еще</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа еще</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ФормаГруппаЕщеРасширеннаяПодсказка" id="55"/>
+				<ChildItems>
+					<Button name="УстановитьСтандантныеНастройки" id="56">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.StandardSettings</CommandName>
+						<ExtendedTooltip name="УстановитьСтандантныеНастройкиРасширеннаяПодсказка" id="57"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ПользовательскиеНастройки" id="5">
+			<Visible>false</Visible>
+			<Autofill>true</Autofill>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>КомпоновщикНастроек.UserSettings</DataPath>
+			<CommandSet>
+				<ExcludedCommand>HierarchicalList</ExcludedCommand>
+				<ExcludedCommand>List</ExcludedCommand>
+				<ExcludedCommand>Tree</ExcludedCommand>
+			</CommandSet>
+			<ViewMode>All</ViewMode>
+			<ContextMenu name="ПользовательскиеНастройкиКонтекстноеМеню" id="6"/>
+			<AutoCommandBar name="ПользовательскиеНастройкиКоманднаяПанель" id="7">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПользовательскиеНастройкиРасширеннаяПодсказка" id="8"/>
+			<SearchStringAddition name="ПользовательскиеНастройкиСтрокаПоиска" id="9">
+				<AdditionSource>
+					<Item>ПользовательскиеНастройки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПользовательскиеНастройкиСтрокаПоискаКонтекстноеМеню" id="10"/>
+				<ExtendedTooltip name="ПользовательскиеНастройкиСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПользовательскиеНастройкиСостояниеПросмотра" id="12">
+				<AdditionSource>
+					<Item>ПользовательскиеНастройки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПользовательскиеНастройкиСостояниеПросмотраКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="ПользовательскиеНастройкиСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПользовательскиеНастройкиУправлениеПоиском" id="15">
+				<AdditionSource>
+					<Item>ПользовательскиеНастройки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПользовательскиеНастройкиУправлениеПоискомКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="ПользовательскиеНастройкиУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+			</SearchControlAddition>
+		</Table>
+		<Pages name="КомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользовательские настройки</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="СтраницаГруппировки" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группировка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница группировки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаГруппировкиРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<Table name="ПользовательскиеНастройкиСтруктура" id="31">
+							<Representation>List</Representation>
+							<Autofill>true</Autofill>
+							<Width>60</Width>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>КомпоновщикНастроек.UserSettings[1].Structure</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ContextMenu name="ПользовательскиеНастройкиСтруктураКонтекстноеМеню" id="32"/>
+							<AutoCommandBar name="ПользовательскиеНастройкиСтруктураКоманднаяПанель" id="33">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ПользовательскиеНастройкиСтруктураКнопка1" id="46">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ПользовательскиеНастройкиСтруктура.StandardCommand.Add</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ПользовательскиеНастройкиСтруктураКнопка1РасширеннаяПодсказка" id="47"/>
+									</Button>
+									<Button name="ПользовательскиеНастройкиСтруктураКнопка2" id="48">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ПользовательскиеНастройкиСтруктура.StandardCommand.Delete</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ПользовательскиеНастройкиСтруктураКнопка2РасширеннаяПодсказка" id="49"/>
+									</Button>
+									<Button name="ПользовательскиеНастройкиСтруктураКнопка3" id="50">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ПользовательскиеНастройкиСтруктура.StandardCommand.MoveDown</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ПользовательскиеНастройкиСтруктураКнопка3РасширеннаяПодсказка" id="51"/>
+									</Button>
+									<Button name="ПользовательскиеНастройкиСтруктураКнопка4" id="52">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ПользовательскиеНастройкиСтруктура.StandardCommand.MoveUp</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ПользовательскиеНастройкиСтруктураКнопка4РасширеннаяПодсказка" id="53"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПользовательскиеНастройкиСтруктураРасширеннаяПодсказка" id="34"/>
+							<SearchStringAddition name="ПользовательскиеНастройкиСтруктураСтрокаПоиска" id="35">
+								<AdditionSource>
+									<Item>ПользовательскиеНастройкиСтруктура</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользовательскиеНастройкиСтруктураСтрокаПоискаКонтекстноеМеню" id="36"/>
+								<ExtendedTooltip name="ПользовательскиеНастройкиСтруктураСтрокаПоискаРасширеннаяПодсказка" id="37"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПользовательскиеНастройкиСтруктураСостояниеПросмотра" id="38">
+								<AdditionSource>
+									<Item>ПользовательскиеНастройкиСтруктура</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользовательскиеНастройкиСтруктураСостояниеПросмотраКонтекстноеМеню" id="39"/>
+								<ExtendedTooltip name="ПользовательскиеНастройкиСтруктураСостояниеПросмотраРасширеннаяПодсказка" id="40"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПользовательскиеНастройкиСтруктураУправлениеПоиском" id="41">
+								<AdditionSource>
+									<Item>ПользовательскиеНастройкиСтруктура</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользовательскиеНастройкиСтруктураУправлениеПоискомКонтекстноеМеню" id="42"/>
+								<ExtendedTooltip name="ПользовательскиеНастройкиСтруктураУправлениеПоискомРасширеннаяПодсказка" id="43"/>
+							</SearchControlAddition>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОтбора" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница отбора</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОтбораРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<Table name="ПользовательскиеНастройкиОтбор" id="18">
+							<Representation>Tree</Representation>
+							<Autofill>true</Autofill>
+							<Width>60</Width>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>КомпоновщикНастроек.UserSettings[0].Filter</DataPath>
+							<ViewMode>All</ViewMode>
+							<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+							<ContextMenu name="ПользовательскиеНастройкиОтборКонтекстноеМеню" id="19"/>
+							<AutoCommandBar name="ПользовательскиеНастройкиОтборКоманднаяПанель" id="20"/>
+							<ExtendedTooltip name="ПользовательскиеНастройкиОтборРасширеннаяПодсказка" id="21"/>
+							<SearchStringAddition name="ПользовательскиеНастройкиОтборСтрокаПоиска" id="22">
+								<AdditionSource>
+									<Item>ПользовательскиеНастройкиОтбор</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользовательскиеНастройкиОтборСтрокаПоискаКонтекстноеМеню" id="23"/>
+								<ExtendedTooltip name="ПользовательскиеНастройкиОтборСтрокаПоискаРасширеннаяПодсказка" id="24"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПользовательскиеНастройкиОтборСостояниеПросмотра" id="25">
+								<AdditionSource>
+									<Item>ПользовательскиеНастройкиОтбор</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользовательскиеНастройкиОтборСостояниеПросмотраКонтекстноеМеню" id="26"/>
+								<ExtendedTooltip name="ПользовательскиеНастройкиОтборСостояниеПросмотраРасширеннаяПодсказка" id="27"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПользовательскиеНастройкиОтборУправлениеПоиском" id="28">
+								<AdditionSource>
+									<Item>ПользовательскиеНастройкиОтбор</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользовательскиеНастройкиОтборУправлениеПоискомКонтекстноеМеню" id="29"/>
+								<ExtendedTooltip name="ПользовательскиеНастройкиОтборУправлениеПоискомРасширеннаяПодсказка" id="30"/>
+							</SearchControlAddition>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="КомпоновщикНастроек" id="1">
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗавершитьРедактирование" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить редактирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить редактирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьРедактирование</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

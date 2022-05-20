@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.14">
+	<Item id="1c6bd5d7-e248-4df6-9708-ea19755721b6">
+		<Name>Справочник_ПроектныеЗадачи</Name>
+		<Code/>
+		<Description>Справочник проектные задачи</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="47683ddf-7c44-4938-9f7a-35a4f34d8d1a">
+				<Name>Справочник_ПроектныеЗадачи_Общие</Name>
+				<Code/>
+				<Description>Справочник проектные задачи общие</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="ffe31311-3b27-44d8-9e1a-c2902a565293">
+		<Name>Справочник_Проекты</Name>
+		<Code/>
+		<Description>Справочник проекты</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="e35b9564-886e-4f2c-82e9-4889a1ba3ced">
+				<Name>Справочник_Проекты_Общие</Name>
+				<Code/>
+				<Description>Справочник проекты общие</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="783faffb-97df-40c9-bc36-abe0ad275b5f">
+		<Name>Справочник_Контрагенты</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Контрагенты"</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="70e62c24-3997-4a35-b27d-da62960c5368">
+		<Name>Справочник_Организации</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Организации"</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4b1f6bdf-16e9-480e-8012-6474f53e56ac">
+		<Name>Справочник_ПапкиФайлов</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Папки файлов"</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="00e33f58-9a02-471c-968b-22cb087ac0f8">
+		<Name>Справочник_Файлы</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Файлы"</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="122da864-1bec-4c00-baa5-aeaad287a42f">
+		<Name>Справочник_ФизическиеЛица</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Физические лица"</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1d5dfa39-5ab1-4a6e-b972-562a4bc88971">
+		<Name>Задача_ЗадачаИсполнителя</Name>
+		<Code/>
+		<Description>Задача задача исполнителя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="060ec476-ed78-4b90-8bef-49fa83246eee">
+		<Name>Справочник_ВидыРабот</Name>
+		<Code/>
+		<Description>Справочник виды работ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a5d38486-586d-4365-9429-5ecae179ad3a">
+		<Name>Справочник_РазделыБазыЗнаний</Name>
+		<Code/>
+		<Description>Справочник разделы базы знаний</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7fb55f55-4887-4f1b-8e87-c0aae0a26f00">
+		<Name>Справочник_СтатьиБазыЗнаний</Name>
+		<Code/>
+		<Description>Справочник статьи базы знаний</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="61786349-2de9-4a1a-ba27-ad3416660bbf">
+		<Name>Документ_Заявка</Name>
+		<Code/>
+		<Description>Доп. свойства документа "Заявка"</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8857f3be-ad57-48bf-b2d9-b330ae4f1cf0">
+		<Name>Документ_ЕжедневныйОтчет</Name>
+		<Code/>
+		<Description>Документ ежедневный отчет</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

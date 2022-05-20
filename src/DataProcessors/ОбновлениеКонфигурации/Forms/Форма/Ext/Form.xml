@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПрименить" id="37">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Применить</CommandName>
+				<ExtendedTooltip name="ФормаПрименитьРасширеннаяПодсказка" id="58"/>
+			</Button>
+			<Button name="ФормаВосстановить" id="38">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Восстановить</CommandName>
+				<ExtendedTooltip name="ФормаВосстановитьРасширеннаяПодсказка" id="59"/>
+			</Button>
+			<Button name="ФормаОткрытьПомощник" id="45">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОткрытьПомощник</CommandName>
+				<ExtendedTooltip name="ФормаОткрытьПомощникРасширеннаяПодсказка" id="60"/>
+			</Button>
+			<Button name="ФормаТестыОтдельныхФункций" id="52">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ТестыОтдельныхФункций</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаТестыОтдельныхФункцийРасширеннаяПодсказка" id="61"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ПереопределениеПараметров" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переопределение параметров подсистемы "Обновление конфигурации"</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переопределение параметров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ПереопределениеПараметровРасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаКороткоеИмяКонфигурации" id="44">
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКороткоеИмяКонфигурацииРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<CheckBoxField name="ИспКороткоеИмяКонфигурации" id="50">
+							<DataPath>Объект.ИспКороткоеИмяКонфигурации</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспКороткоеИмяКонфигурацииКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ИспКороткоеИмяКонфигурацииРасширеннаяПодсказка" id="64"/>
+						</CheckBoxField>
+						<InputField name="КороткоеИмяКонфигурации" id="48">
+							<DataPath>Объект.КороткоеИмяКонфигурации</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="КороткоеИмяКонфигурацииКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="КороткоеИмяКонфигурацииРасширеннаяПодсказка" id="65"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="СерверДляПроверкиНаличияОбновления" id="39">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СерверДляПроверкиНаличияОбновленияРасширеннаяПодсказка" id="66"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаАдресСервераДляПроверкиНаличияОбновления" id="42">
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАдресСервераДляПроверкиНаличияОбновленияРасширеннаяПодсказка" id="67"/>
+							<ChildItems>
+								<CheckBoxField name="ИспАдресСервераДляПроверкиНаличияОбновления" id="21">
+									<DataPath>Объект.ИспАдресСервераДляПроверкиНаличияОбновления</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспАдресСервераДляПроверкиНаличияОбновленияКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="ИспАдресСервераДляПроверкиНаличияОбновленияРасширеннаяПодсказка" id="68"/>
+								</CheckBoxField>
+								<InputField name="АдресСервераДляПроверкиНаличияОбновления" id="5">
+									<DataPath>Объект.АдресСервераДляПроверкиНаличияОбновления</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АдресСервераДляПроверкиНаличияОбновленияКонтекстноеМеню" id="6"/>
+									<ExtendedTooltip name="АдресСервераДляПроверкиНаличияОбновленияРасширеннаяПодсказка" id="69"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаАдресРесурсовДляПроверкиНаличияОбновления" id="43">
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАдресРесурсовДляПроверкиНаличияОбновленияРасширеннаяПодсказка" id="70"/>
+							<ChildItems>
+								<CheckBoxField name="ИспАдресРесурсовДляПроверкиНаличияОбновления" id="19">
+									<DataPath>Объект.ИспАдресРесурсаДляПроверкиНаличияОбновления</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспАдресРесурсовДляПроверкиНаличияОбновленияКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ИспАдресРесурсовДляПроверкиНаличияОбновленияРасширеннаяПодсказка" id="71"/>
+								</CheckBoxField>
+								<InputField name="АдресРесурсовДляПроверкиНаличияОбновления" id="3">
+									<DataPath>Объект.АдресРесурсаДляПроверкиНаличияОбновления</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АдресРесурсовДляПроверкиНаличияОбновленияКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="АдресРесурсовДляПроверкиНаличияОбновленияРасширеннаяПодсказка" id="72"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="СерверОбновлений" id="40">
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СерверОбновленийРасширеннаяПодсказка" id="73"/>
+					<ChildItems>
+						<CheckBoxField name="ИспАдресСервераОбновлений" id="23">
+							<DataPath>Объект.ИспАдресСервераОбновлений</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспАдресСервераОбновленийКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ИспАдресСервераОбновленийРасширеннаяПодсказка" id="74"/>
+						</CheckBoxField>
+						<InputField name="АдресСервераОбновлений" id="7">
+							<DataPath>Объект.АдресСервераОбновлений</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="АдресСервераОбновленийКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="АдресСервераОбновленийРасширеннаяПодсказка" id="75"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="РежимОтладкиКлиентСервера" id="53">
+					<DataPath>РежимИмитацииКлиентСервернойИБ</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РежимОтладкиКлиентСервераКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="РежимОтладкиКлиентСервераРасширеннаяПодсказка" id="76"/>
+				</CheckBoxField>
+				<CheckBoxField name="РежимОтладкиСкриптаОбновления" id="55">
+					<DataPath>РежимОтладкиСкрипта</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РежимОтладкиСкриптаОбновленияКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="РежимОтладкиСкриптаОбновленияРасширеннаяПодсказка" id="77"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОбновлениеКонфигурации</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="РежимИмитацииКлиентСервернойИБ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим имитации клиент-серверной ИБ на файловой базе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимОтладкиСкрипта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим отладки скрипта обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Применить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Применить</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Восстановить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Восстановить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Восстановить значения по умолчанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Восстановить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПомощник" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть помощник</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть помощник</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПомощник</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ТестыОтдельныхФункций" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тесты отдельных функций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тесты отдельных функций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестыОтдельныхФункций</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

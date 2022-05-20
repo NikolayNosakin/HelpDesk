@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Личные адресаты</v8:content>
+		</v8:item>
+	</Title>
+	<Width>95</Width>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ДеревоКонтактов" id="1">
+			<Representation>Tree</Representation>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ДеревоКонтактов</DataPath>
+			<RowPictureDataPath>ДеревоКонтактов.НомерКартинки</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.СостоянияПользователей</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</RowsPicture>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<ContextMenu name="ДеревоКонтактовКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ДеревоКонтактовКонтекстноеМенюДобавить" id="14">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ДеревоКонтактов.StandardCommand.Add</CommandName>
+						<ExtendedTooltip name="ДеревоКонтактовКонтекстноеМенюДобавитьРасширеннаяПодсказка" id="33"/>
+					</Button>
+					<Button name="ДеревоКонтактовКонтекстноеМенюДобавитьГруппу" id="17">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьГруппу</CommandName>
+						<ExtendedTooltip name="ДеревоКонтактовКонтекстноеМенюДобавитьГруппуРасширеннаяПодсказка" id="34"/>
+					</Button>
+					<Button name="ДеревоКонтактовКонтекстноеМенюИзменить" id="15">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ДеревоКонтактов.StandardCommand.Change</CommandName>
+						<ExtendedTooltip name="ДеревоКонтактовКонтекстноеМенюИзменитьРасширеннаяПодсказка" id="35"/>
+					</Button>
+					<Button name="ДеревоКонтактовКонтекстноеМенюУдалить" id="16">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ДеревоКонтактов.StandardCommand.Delete</CommandName>
+						<ExtendedTooltip name="ДеревоКонтактовКонтекстноеМенюУдалитьРасширеннаяПодсказка" id="36"/>
+					</Button>
+					<Button name="ДеревоКонтактовКонтекстноеМенюЗагрузитьИзOutlook" id="20">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьИзOutlook</CommandName>
+						<ExtendedTooltip name="ДеревоКонтактовКонтекстноеМенюЗагрузитьИзOutlookРасширеннаяПодсказка" id="37"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="ДеревоКонтактовКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ДеревоКонтактовДобавить" id="11">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ДеревоКонтактов.StandardCommand.Add</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Создать</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ДеревоКонтактовДобавитьРасширеннаяПодсказка" id="38"/>
+					</Button>
+					<Button name="ДеревоКонтактовДобавитьГруппу" id="10">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьГруппу</CommandName>
+						<ExtendedTooltip name="ДеревоКонтактовДобавитьГруппуРасширеннаяПодсказка" id="39"/>
+					</Button>
+					<Button name="ДеревоКонтактовИзменить" id="13">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ДеревоКонтактов.StandardCommand.Change</CommandName>
+						<ExtendedTooltip name="ДеревоКонтактовИзменитьРасширеннаяПодсказка" id="40"/>
+					</Button>
+					<Button name="ДеревоКонтактовУдалить" id="12">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ДеревоКонтактов.StandardCommand.Delete</CommandName>
+						<ExtendedTooltip name="ДеревоКонтактовУдалитьРасширеннаяПодсказка" id="41"/>
+					</Button>
+					<Button name="ДеревоКонтактовОбновить" id="18">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<ExtendedTooltip name="ДеревоКонтактовОбновитьРасширеннаяПодсказка" id="42"/>
+					</Button>
+					<Button name="ДеревоКонтактовЗагрузитьИзOutlook" id="19">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьИзOutlook</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ДеревоКонтактовЗагрузитьИзOutlookРасширеннаяПодсказка" id="43"/>
+					</Button>
+					<Popup name="Преобразовать" id="29">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Преобразовать в</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Преобразовать</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ПреобразоватьРасширеннаяПодсказка" id="44"/>
+						<ChildItems>
+							<Button name="ДеревоКонтактовПреобразоватьВКорреспондента" id="30">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПреобразоватьВКорреспондента</CommandName>
+								<ExtendedTooltip name="ДеревоКонтактовПреобразоватьВКорреспондентаРасширеннаяПодсказка" id="45"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоКонтактовРасширеннаяПодсказка" id="46"/>
+			<SearchStringAddition name="ДеревоКонтактовСтрокаПоиска" id="47">
+				<AdditionSource>
+					<Item>ДеревоКонтактов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоКонтактовСтрокаПоискаКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="ДеревоКонтактовСтрокаПоискаРасширеннаяПодсказка" id="49"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоКонтактовСостояниеПросмотра" id="50">
+				<AdditionSource>
+					<Item>ДеревоКонтактов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоКонтактовСостояниеПросмотраКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="ДеревоКонтактовСостояниеПросмотраРасширеннаяПодсказка" id="52"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоКонтактовУправлениеПоиском" id="53">
+				<AdditionSource>
+					<Item>ДеревоКонтактов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоКонтактовУправлениеПоискомКонтекстноеМеню" id="54"/>
+				<ExtendedTooltip name="ДеревоКонтактовУправлениеПоискомРасширеннаяПодсказка" id="55"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="DragCheck">ДеревоКонтактовПроверкаПеретаскивания</Event>
+				<Event name="Selection">ДеревоКонтактовВыбор</Event>
+				<Event name="BeforeAddRow">ДеревоКонтактовПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ДеревоКонтактовПередУдалением</Event>
+				<Event name="DragStart">ДеревоКонтактовНачалоПеретаскивания</Event>
+				<Event name="Drag">ДеревоКонтактовПеретаскивание</Event>
+				<Event name="BeforeRowChange">ДеревоКонтактовПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ДеревоКонтактовНаименование" id="8">
+					<DataPath>ДеревоКонтактов.Наименование</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИО</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="ДеревоКонтактовНаименованиеКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ДеревоКонтактовНаименованиеРасширеннаяПодсказка" id="56"/>
+				</InputField>
+				<InputField name="ДеревоКонтактовОрганизация" id="21">
+					<DataPath>ДеревоКонтактов.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоКонтактовОрганизацияКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ДеревоКонтактовОрганизацияРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ДеревоКонтактовДолжность" id="23">
+					<DataPath>ДеревоКонтактов.Должность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоКонтактовДолжностьКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДеревоКонтактовДолжностьРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="ДеревоКонтактовКомментарий" id="25">
+					<DataPath>ДеревоКонтактов.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоКонтактовКомментарийКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ДеревоКонтактовКомментарийРасширеннаяПодсказка" id="59"/>
+				</InputField>
+				<InputField name="ДеревоКонтактовEmail" id="27">
+					<DataPath>ДеревоКонтактов.Email</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоКонтактовEmailКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ДеревоКонтактовEmailРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<InputField name="ДеревоКонтактовТелефон" id="31">
+					<DataPath>ДеревоКонтактов.Телефон</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоКонтактовТелефонКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ДеревоКонтактовТелефонРасширеннаяПодсказка" id="61"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДеревоКонтактов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево контактов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ГруппыЛичныхАдресатов</v8:Type>
+						<v8:Type>cfg:CatalogRef.ЛичныеАдресаты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Группа" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ГруппыЛичныхАдресатов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерКартинки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоАдресат" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это адресат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПометкаУдаления" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Должность" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Организация" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Email" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Email</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Телефон" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Телефон</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьГруппу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать группу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать группу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateFolder</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьГруппу</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Обновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F5</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьИзOutlook" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из Microsoft Outlook</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из outlook</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзOutlook</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПреобразоватьВКорреспондента" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корреспондента или контактное лицо</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Преобразовать в корреспондента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПреобразоватьВКорреспондента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<Subsystem uuid="e4f8e894-58ea-4b3e-a4c2-97bd47041e14">
+		<Properties>
+			<Name>ЭлектроннаяПочта</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронная почта</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.Почта</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Почта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ЭлектроннаяПочта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВстроеннаяПочтаСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВстроеннаяПочтаКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВстроеннаяПочтаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Почта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСHTML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСЛичнымиАдресатами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСЛичнымиАдресатамиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПочтовымиСообщениями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПочтовымиСообщениямиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СвязиДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПочтаВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПочта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПочтаКлиентПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользованиеВстроеннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВводКомментария</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.РедактированиеНовогоПисьма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СоздатьПисьмо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УчастникиРабочейГруппы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТолькоСкрепка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СохранитьАдресата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СинийФлаг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПустойФлаг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПрочтенноеПисьмо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПользовательАдрес</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПолучитьОтправитьПочту</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереслатьЭлектронноеПисьмо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереместитьВКорзину</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОтправитьЭлектронноеПисьмо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОтправитьEmail</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОранжевыйФлаг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НепрочтенноеПисьмо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЛиловыйФлаг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КрасныйФлаг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КорзинаДляПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КонтактыПользователя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияПисьма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияПапкиПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗеленыйФлаг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЖелтыйФлаг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДобавитьВОтчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВходящийИсходящийВнутренний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВосклицательныйЗнак</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВложениеВПисьмо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияФлаговПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьВстроеннуюПочту</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыСвязей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УчетныеЗаписиЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПапкиПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЛичныеАдресаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИдентификаторыОбъектовМетаданных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыЛичныхАдресатов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВходящееПисьмо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ИсходящееПисьмо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ЭлектроннаяПочта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыSMTPАутентификации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФлагиПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыТекстовПочтовыхСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыИсходящихПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыВходящихПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ОперацииСУчетнойЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыПочтовыхКлиентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыПапокПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыДействийСПисьмами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыОтображенияКоличестваПисемВПапке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыНастройкиОтправкиУведомленийОПрочтении</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыИспользованияПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВажностьПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НастройкаПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СвязиДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкаСвязей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ФлагиПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостоянияУчетныхЗаписей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОПисьмах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПапкиУчетныхЗаписей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПапкиПисемБыстрогоДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НеОтправленныеИсходящиеПисьма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НеПолученныеВходящиеПисьма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиОтложеннойОтправкиПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИдентификаторыПочтовыхВложений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИдентификаторыПолученныхПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">decb53b4-c90d-40f1-ac95-3375e78292da</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПрофильНовогоПользователяПоУмолчанию</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Распределение не назначенных заявок</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПулаЗаявок" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пул заявок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пула заявок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПулаЗаявокExtendedTooltip" id="94"/>
+			<ChildItems>
+				<Table name="ПулЗаявок" id="3">
+					<Representation>Tree</Representation>
+					<MultipleChoice>true</MultipleChoice>
+					<RowSelectionMode>Row</RowSelectionMode>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>ПулЗаявок</DataPath>
+					<RowPictureDataPath>ПулЗаявок.DefaultPicture</RowPictureDataPath>
+					<CommandSet>
+						<ExcludedCommand>Choose</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>Create</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>Post</ExcludedCommand>
+						<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+						<ExcludedCommand>UndoPosting</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>false</AllowGettingCurrentRowURL>
+					<ContextMenu name="ПулЗаявокКонтекстноеМеню" id="4"/>
+					<AutoCommandBar name="ПулЗаявокКоманднаяПанель" id="5">
+						<ChildItems>
+							<Button name="НазначитьЗаявку" id="80">
+								<Type>CommandBarButton</Type>
+								<DefaultButton>true</DefaultButton>
+								<CommandName>Form.Command.НазначитьЗаявку</CommandName>
+								<ExtendedTooltip name="НазначитьЗаявкуРасширеннаяПодсказка" id="108"/>
+							</Button>
+							<Button name="ПулЗаявокОтменитьЗаявку" id="186">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<CommandName>Form.Command.ОтменитьЗаявку</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.SpreadsheetDeletePageBreak</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ПулЗаявокОтменитьЗаявкуРасширеннаяПодсказка" id="187"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ПулЗаявокExtendedTooltip" id="95"/>
+					<SearchStringAddition name="ПулЗаявокSearchString" id="174">
+						<AdditionSource>
+							<Item>ПулЗаявок</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПулЗаявокSearchStringContextMenu" id="175"/>
+						<ExtendedTooltip name="ПулЗаявокSearchStringExtendedTooltip" id="176"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПулЗаявокViewStatus" id="177">
+						<AdditionSource>
+							<Item>ПулЗаявок</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПулЗаявокViewStatusContextMenu" id="178"/>
+						<ExtendedTooltip name="ПулЗаявокViewStatusExtendedTooltip" id="179"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПулЗаявокSearchControl" id="180">
+						<AdditionSource>
+							<Item>ПулЗаявок</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПулЗаявокSearchControlContextMenu" id="181"/>
+						<ExtendedTooltip name="ПулЗаявокSearchControlExtendedTooltip" id="182"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnActivateRow">ПулЗаявокПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="ПулЗаявокНомер" id="10">
+							<DataPath>ПулЗаявок.Номер</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>№</v8:content>
+								</v8:item>
+							</Title>
+							<Width>1</Width>
+							<ContextMenu name="ПулЗаявокНомерКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ПулЗаявокНомерExtendedTooltip" id="99"/>
+						</LabelField>
+						<ColumnGroup name="ПулЗаявокГруппаДаты" id="90">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пул заявок группа даты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пул заявок группа даты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПулЗаявокГруппаДатыExtendedTooltip" id="96"/>
+							<ChildItems>
+								<LabelField name="ПулЗаявокДата" id="6">
+									<DataPath>ПулЗаявок.Дата</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Открыта</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПулЗаявокДатаКонтекстноеМеню" id="7"/>
+									<ExtendedTooltip name="ПулЗаявокДатаExtendedTooltip" id="97"/>
+								</LabelField>
+								<LabelField name="ПулЗаявокДатаИзменения" id="18">
+									<DataPath>ПулЗаявок.ДатаИзменения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изменена</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПулЗаявокДатаИзмененияКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="ПулЗаявокДатаИзмененияExtendedTooltip" id="98"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<LabelField name="ПулЗаявокТема" id="168">
+							<DataPath>ПулЗаявок.Тема</DataPath>
+							<ContextMenu name="ПулЗаявокТемаКонтекстноеМеню" id="169"/>
+							<ExtendedTooltip name="ПулЗаявокТемаРасширеннаяПодсказка" id="170"/>
+						</LabelField>
+						<LabelField name="ПулЗаявокКонтрагент" id="183">
+							<DataPath>ПулЗаявок.Контрагент</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заказчик</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПулЗаявокКонтрагентКонтекстноеМеню" id="184"/>
+							<ExtendedTooltip name="ПулЗаявокКонтрагентРасширеннаяПодсказка" id="185"/>
+						</LabelField>
+						<LabelField name="ПулЗаявокСрокЗаявки" id="32">
+							<DataPath>ПулЗаявок.СрокЗаявки</DataPath>
+							<ContextMenu name="ПулЗаявокСрокЗаявкиКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ПулЗаявокСрокЗаявкиExtendedTooltip" id="102"/>
+						</LabelField>
+						<LabelField name="ПулЗаявокТипЗаявки" id="36">
+							<DataPath>ПулЗаявок.ТипЗаявки</DataPath>
+							<ContextMenu name="ПулЗаявокТипЗаявкиКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ПулЗаявокТипЗаявкиExtendedTooltip" id="104"/>
+						</LabelField>
+						<LabelField name="ПулЗаявокСтатус" id="34">
+							<DataPath>ПулЗаявок.Статус</DataPath>
+							<ContextMenu name="ПулЗаявокСтатусКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ПулЗаявокСтатусExtendedTooltip" id="103"/>
+						</LabelField>
+						<LabelField name="ПулЗаявокОрганизация" id="26">
+							<DataPath>ПулЗаявок.Организация</DataPath>
+							<ContextMenu name="ПулЗаявокОрганизацияКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ПулЗаявокОрганизацияExtendedTooltip" id="100"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ГруппаСодержанияПула" id="142">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание заявки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа содержания пула</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ExtendedTooltip name="ГруппаСодержанияПулаРасширеннаяПодсказка" id="143"/>
+					<ChildItems>
+						<HTMLDocumentField name="СодержаниеЗаявкиПула" id="85">
+							<DataPath>ОписаниеЗаявкиHTML</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Height>5</Height>
+							<ContextMenu name="СодержаниеЗаявкиПулаКонтекстноеМеню" id="86"/>
+							<ExtendedTooltip name="СодержаниеЗаявкиПулаExtendedTooltip" id="105"/>
+							<Events>
+								<Event name="DocumentComplete">СодержаниеЗаявкиПулаДокументСформирован</Event>
+							</Events>
+						</HTMLDocumentField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ПулЗаявок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пул заявок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументЗаявка.Ссылка КАК Ссылка,
+	ДокументЗаявка.ПометкаУдаления КАК ПометкаУдаления,
+	ДокументЗаявка.Номер КАК Номер,
+	ДокументЗаявка.Дата КАК Дата,
+	ДокументЗаявка.Проведен КАК Проведен,
+	ДокументЗаявка.Постановщик КАК Постановщик,
+	ДокументЗаявка.ОписаниеЗаявки КАК ОписаниеЗаявки,
+	ДокументЗаявка.Статус КАК Статус,
+	ДокументЗаявка.МоментВремени КАК МоментВремени,
+	ДокументЗаявка.ДатаИзменения КАК ДатаИзменения,
+	ДокументЗаявка.Организация КАК Организация,
+	ДокументЗаявка.СрокЗаявки КАК СрокЗаявки,
+	ДокументЗаявка.ТипЗаявки КАК ТипЗаявки,
+	ДокументЗаявка.Контрагент КАК Контрагент,
+	ДокументЗаявка.ТекущийИсполнитель КАК ТекущийИсполнитель,
+	ДокументЗаявка.ЗаявкаЗакрыта КАК ЗаявкаЗакрыта,
+	ДокументЗаявка.ДатаЗакрытия КАК ДатаЗакрытия,
+	ДокументЗаявка.Тема КАК Тема,
+	ДокументЗаявка.Приоритет КАК Приоритет
+ИЗ
+	Документ.Заявка КАК ДокументЗаявка
+ГДЕ
+	(ДокументЗаявка.Статус &lt;&gt; ЗНАЧЕНИЕ(Справочник.СостоянияЗаявок.Отменена)
+				И ДокументЗаявка.Статус &lt;&gt; ЗНАЧЕНИЕ(Справочник.СостоянияЗаявок.Объединена)
+				И ДокументЗаявка.ТекущийИсполнитель = ЗНАЧЕНИЕ(Справочник.Пользователи.РаспределительЗаявок)
+			ИЛИ ДокументЗаявка.ТекущийИсполнитель = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка))</QueryText>
+				<MainTable>Document.Заявка</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ЗаявкаЗакрыта</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Номер</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Номер</dcsset:left>
+									<dcsset:comparisonType>Filled</dcsset:comparisonType>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Шрифт</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Приоритет</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ПриоритетыЗаявки.Высокий</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#FF7878</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Дата</dcsset:left>
+									<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="v8:StandardBeginningDate">
+										<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+									</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#0000FF</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Постановщик</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИспользоватьУчетПоОрганизациям" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать учет по организациям</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОписаниеЗаявкиHTML" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание заявки HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НазначитьЗаявку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить заявки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить заявку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ДобавитьРешение</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>НазначитьЗаявку</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Обновить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтменитьЗаявку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить заявки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить заявку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьЗаявку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

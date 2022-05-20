@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<Subsystem uuid="56773599-223a-4fce-a5f0-c13b5e615872">
+		<Properties>
+			<Name>Администрирование</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администрирование</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.АдминистрированиеЧБ</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АктивныеПользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.БлокировкаРаботыПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЖурналРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтрольЖурналаРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Корзина</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.БлокировкаСоединений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЖурналРегистрации32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КонсольЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КонтрольЖурналаРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УправлениеНастройкамиФорм</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Управление_Поиском</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Пользователь32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.БлокировкаСоединенийСИнформационнойБазой</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АдминистрированиеСистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ОбщаяНастройкаСистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НаборыДополнительныхРеквизитовИСведений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПолнотекстовыйПоискВДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РегламентныеИФоновыеЗадания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Организации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиВерсионированияОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АвтоматическоеИзвлечениеТекстов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Контрагенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Валюты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НастройкаСистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Настройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыСвязей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УчетныеЗаписиЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УправлениеПолнотекстовымПоиском</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УдалениеПомеченныхОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НастройкаПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НастройкиПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкаСвязей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СвязиДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПараметрыАдминистрированияСервернойИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УправлениеНастройкамиФорм</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ВключитьРежимОтладкиРедактораHTML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НастройкаСистемы48</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.АдминистрированиеЧБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкиПользователя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаУчетныхЗаписейИзAD</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СпискиХранилищНастроек</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.АдресатыПолученияОтчетаПоЖурналуРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьТелеграм</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>ВерсионированиеОбъектов</Subsystem>
+			<Subsystem>ПолнотекстовыйПоиск</Subsystem>
+			<Subsystem>РегламентныеЗадания</Subsystem>
+			<Subsystem>Пользователи</Subsystem>
+			<Subsystem>ФизическиеЛица</Subsystem>
+			<Subsystem>Организации</Subsystem>
+			<Subsystem>Контрагенты</Subsystem>
+			<Subsystem>НастройкиПользователя</Subsystem>
+			<Subsystem>Телеграм</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>
