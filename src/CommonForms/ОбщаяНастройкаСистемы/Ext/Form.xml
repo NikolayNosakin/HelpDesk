@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9.1">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
@@ -42,7 +42,6 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ОбщиеПараметрыЧасть1ExtendedTooltip" id="323"/>
@@ -57,7 +56,6 @@
 								</PictureDecoration>
 								<UsualGroup name="Группа7" id="45">
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="Группа7ExtendedTooltip" id="325"/>
@@ -82,7 +80,6 @@
 											</Title>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<ChildItemsWidth>Equal</ChildItemsWidth>
 											<ExtendedTooltip name="ГруппаПользователиИДоступExtendedTooltip" id="327"/>
 											<ChildItems>
@@ -126,7 +123,6 @@
 											</Title>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Horizontal</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаНастройкаПодсистемExtendedTooltip" id="330"/>
@@ -139,7 +135,6 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаНастройкаПодсистемЧасть1ExtendedTooltip" id="331"/>
@@ -172,7 +167,6 @@
 													<Shortcut>Ctrl+S</Shortcut>
 													<HorizontalStretch>true</HorizontalStretch>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаНастройкаПодсистемЧасть2ExtendedTooltip" id="334"/>
@@ -209,7 +203,6 @@
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<ExtendedTooltip name="ГруппаВременныхКаталоговExtendedTooltip" id="337"/>
 											<ChildItems>
 												<InputField name="КаталогВременныхФайловДляWindows" id="206">
@@ -240,7 +233,6 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Horizontal</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПутьКБазеРасширеннаяПодсказка" id="413"/>
@@ -274,7 +266,6 @@
 											<Shortcut>Ctrl+S</Shortcut>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПрочееExtendedTooltip" id="342"/>
@@ -287,7 +278,6 @@
 												</Button>
 												<UsualGroup name="Группа15" id="158">
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="Группа15ExtendedTooltip" id="344"/>
@@ -329,7 +319,6 @@
 					<ChildItems>
 						<UsualGroup name="Группа4" id="37">
 							<Group>Horizontal</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа4ExtendedTooltip" id="347"/>
@@ -346,7 +335,6 @@
 								</PictureDecoration>
 								<UsualGroup name="Группа5" id="40">
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="Группа5ExtendedTooltip" id="349"/>
@@ -360,7 +348,6 @@
 											</Title>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Horizontal</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаХраненияФайловExtendedTooltip" id="350"/>
@@ -396,7 +383,6 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Horizontal</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаРазмерExtendedTooltip" id="353"/>
@@ -433,7 +419,6 @@
 											</Title>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаРасширениеExtendedTooltip" id="356"/>
@@ -482,7 +467,6 @@
 					<ChildItems>
 						<UsualGroup name="Группа2" id="240">
 							<Group>Horizontal</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа2ExtendedTooltip" id="361"/>
@@ -499,7 +483,6 @@
 								</PictureDecoration>
 								<UsualGroup name="Группа1" id="243">
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="Группа1ExtendedTooltip" id="363"/>
@@ -530,7 +513,6 @@
 											</Title>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<ExtendedTooltip name="БизнесПроцессыИЗадачиОбщиеExtendedTooltip" id="366"/>
 											<ChildItems>
 												<CheckBoxField name="ИспользоватьПодчиненныеБизнесПроцессы" id="249">
@@ -593,7 +575,6 @@
 											</Title>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<ExtendedTooltip name="БизнесПроцессыИЗадачиЗаданиеExtendedTooltip" id="372"/>
 											<ChildItems>
 												<CheckBoxField name="ИзменятьЗаданияЗаднимЧислом" id="260">
@@ -635,7 +616,6 @@
 											</ToolTip>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Horizontal</Group>
-											<Behavior>Usual</Behavior>
 											<ExtendedTooltip name="БизнесПроцессыИЗадачиГрафикиExtendedTooltip" id="375"/>
 											<ChildItems>
 												<CheckBoxField name="ИспользоватьГрафикиРаботы" id="301">
@@ -693,7 +673,6 @@
 						</PictureDecoration>
 						<UsualGroup name="Группа6" id="439">
 							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="440"/>
 							<ChildItems>
@@ -759,7 +738,6 @@
 					<ChildItems>
 						<UsualGroup name="Группа17" id="287">
 							<Group>Horizontal</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа17ExtendedTooltip" id="379"/>
@@ -788,7 +766,6 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<ExtendedTooltip name="Группа18ExtendedTooltip" id="381"/>
 									<ChildItems>
 										<CheckBoxField name="ВестиУчетПоПроектам" id="307">
@@ -829,7 +806,6 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаРеквизитыПроектаExtendedTooltip" id="386"/>
@@ -867,7 +843,6 @@
 											</ToolTip>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Horizontal</Group>
-											<Behavior>Usual</Behavior>
 											<ExtendedTooltip name="БизнесПроцессыИЗадачиГрафики1РасширеннаяПодсказка" id="430"/>
 											<ChildItems>
 												<CheckBoxField name="ИспользоватьГрафикиРаботы1" id="431">
@@ -895,7 +870,6 @@
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="438"/>
 											<ChildItems>
 												<CheckBoxField name="ВестиУчетФактическихТрудозатрат" id="313">
@@ -999,7 +973,6 @@
 					<ChildItems>
 						<UsualGroup name="Группа12" id="265">
 							<Group>Horizontal</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа12ExtendedTooltip" id="390"/>
@@ -1022,7 +995,6 @@
 								</PictureDecoration>
 								<UsualGroup name="Группа13" id="268">
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="Группа13ExtendedTooltip" id="392"/>
@@ -1082,7 +1054,6 @@
 					<ChildItems>
 						<UsualGroup name="Группа8" id="455">
 							<Group>Horizontal</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="456"/>
@@ -1104,7 +1075,6 @@
 									<ExtendedTooltip name="ДекорацияТелеграмРасширеннаяПодсказка" id="461"/>
 								</PictureDecoration>
 								<UsualGroup name="Группа9" id="457">
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="458"/>

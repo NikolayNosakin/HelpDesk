@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9.1">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -41,7 +41,6 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСверхуРасширеннаяПодсказка" id="18"/>
@@ -68,7 +67,6 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ПанельНастроекРасширеннаяПодсказка" id="60"/>
@@ -87,7 +85,6 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ПанельНастроекГоризонтРасширеннаяПодсказка" id="104"/>
@@ -106,7 +103,6 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаКнопокПериодаРасширеннаяПодсказка" id="110"/>
@@ -314,7 +310,6 @@
 											<v8:content>Группа надписи периода</v8:content>
 										</v8:item>
 									</ToolTip>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаНадписиПериодаРасширеннаяПодсказка" id="112"/>
@@ -346,7 +341,6 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
 							<CollapsedRepresentationTitle>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -463,7 +457,6 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
 			<CollapsedRepresentationTitle>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -490,7 +483,6 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГоризонтальнаяГруппаНизРасширеннаяПодсказка" id="98"/>
@@ -542,7 +534,6 @@
 									<HorizontalStretch>true</HorizontalStretch>
 									<VerticalStretch>true</VerticalStretch>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ExtendedTooltip name="ДоступныеКалендариРасширеннаяПодсказка" id="53"/>
 								</UsualGroup>
@@ -568,7 +559,6 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ДобавлениеКалендаряРасширеннаяПодсказка" id="87"/>
@@ -681,11 +671,6 @@
 					<pl:replacementDate>0001-01-01T00:00:00</pl:replacementDate>
 					<pl:deleted>false</pl:deleted>
 					<pl:id>821efef7-461d-41c2-abc6-77cb513ba998</pl:id>
-					<pl:textFormatted>false</pl:textFormatted>
-					<pl:border width="1">
-						<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
-					</pl:border>
-					<pl:editMode>EnableEdit</pl:editMode>
 				</pl:item>
 				<pl:borderColor>auto</pl:borderColor>
 				<pl:backColor>auto</pl:backColor>
@@ -749,10 +734,6 @@
 				<pl:minRowHeight>0</pl:minRowHeight>
 				<pl:fixDimensionsHeader>auto</pl:fixDimensionsHeader>
 				<pl:fixTimeScaleHeader>auto</pl:fixTimeScaleHeader>
-				<pl:border width="1">
-					<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
-				</pl:border>
-				<pl:newItemsTextType>String</pl:newItemsTextType>
 			</Settings>
 		</Attribute>
 		<Attribute name="ДоступныеКалендари" id="1">
